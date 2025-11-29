@@ -17,16 +17,17 @@
 </head>
 <body>
   <div class="receipt">
+    <img src="XEClogo.jpg" style="display: block; margin: 0 auto 16px; width: 120px; height: 120px;">
     <h2>Event Payment Receipt</h2>
 
     <div class="row">
       <label>Event Name:</label>
-      <input type="text" readonly id="eventName" value="Nature Walk at Sanjay Gandhi National Park">
+      <input type="text" readonly id="eventName" value="Tungareshwar Nature Trail, SGNP - 7 Dec 2025">
     </div>
 
     <div class="row">
       <label>Organizer:</label>
-      <input type="text" disabled id="organizer" value="Green Club (BA+)">
+      <input type="text" disabled id="organizer" value="SXCM Green Club (BA+)">
     </div>
 
     <div class="row">
@@ -37,6 +38,11 @@
     <div class="row">
       <label>Participant UID:</label>
       <input type="text" id="participantUID">
+    </div>
+
+    <div class="row">
+      <label>Participant Course/Class:</label>
+      <input type="text" id="participantCourse">
     </div>
 
     <div class="row">
@@ -74,7 +80,6 @@
       // Only clear participant-specific fields
       document.getElementById('participantName').value = '';
       document.getElementById('participantUID').value = '';
-      document.getElementById('date').value = '';
     }
   </script>
 </body>
